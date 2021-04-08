@@ -1,4 +1,11 @@
-1.
+1. 
+Why is this hard : Ball을 굴리는 것으로 Optimization을 상상할 때, 공이 정체되는 point가 실제로 optimum한 위치인지 saddle point인지 직접적으로 알 수 있는 방법은 없다. 
+                   실제로 Parameter와 loss의 space는 convex하지 않은경우가 많기 때문에 Ball이 정지하는 위치에 대하여 어느 상태인지 확실히 알 수 어렵다.
+Can you exploit this effect also optimization algorithms? : 가능하다, 우리는 learning rate(LR)의 스케쥴을 조정할 수 있다. 초기에는 LR의 크기를 키워 넓은 범위로의 도약을 유도한다.
+                                                            그리고 동시에 LR의 크기를 줄여 나감으로써 미세조정이 필요한 point에서 작은 범위로의 도약을 이뤄나간다.
+                                                            이와 더불어, momentum을 활용해 local optimum을 탈출시키거나 regularization technique을 활용하여 
+                                                            weight space 범위를 국소적 영역으로 한정시키는(scaling)방법의 적용이 가능하다.
 
-2. momentum을 활용하는 경우, SGD시 saddle point 또는 Local optimum에서 보다 수월하게 벗어날수 있게 된다. 
-Minibatch단위에 Momentum을 적용할 때도 비슷하게 saddle point 또는 Local optimum에서 벗어나기는 하나,
+2. momentum을 활용하는 경우, SGD시 Optimal parameter에 수렴하는 속도가 비교적 빠르게 이루어지며 saddle point 또는 Local optimum에서 보다 수월하게 벗어날수 있게 된다. 
+Minibatch단위에 Momentum을 적용할 때도 똑같이 수렴속도의 향상을 기대할 수 있으며 saddle point 또는 Local optimum에서 벗어날 수 있다는 장점이 유효하다. 
+차이점이라면 전체 Data Batch 중 1개씩의 sample을 optimization에 참여시키는 기존의 SGD와는 다르게 minibatch 단위로 SGD를 진행하면 보다 안정적으로 수렴이 가능하다는 것이다. 
