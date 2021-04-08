@@ -1,0 +1,4 @@
+1.
+
+2. momentum을 활용하는 경우, SGD시 saddle point 또는 Local optimum에서 보다 수월하게 벗어날수 있게 된다. 
+Minibatch단위에 Momentum을 적용할 때도 비슷하게 saddle point 또는 Local optimum에서 벗어나기는 하나,
