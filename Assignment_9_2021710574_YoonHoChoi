@@ -1,7 +1,7 @@
 1. 기존 Word2Vec, Fasttext 등의 embedding 모델은 Corpus로 부터 vector representation의 학습이 완료되면 fine tunning 없이 down stream task에 활용되는 구조였다.
 이 경우 문장 내의 맥락(Context)의 반영이 어려운 구조일 수 밖에 없다. 같은 단어라 하더라도, 문장내의 위치에 따라 다른 의미/중요도를 가질 수 밖에 없기 때문이다.
 문장 내 단어의 위치에 따라 각기 다른 vector representation을 갖게 하는 모델을 우리는 Context sensitive 모델이라 일컬으며, 
-이러한 representation들을 활용하여 down stream task를 건설 시 성능 효과를 기대 할 수 있다. 
+이렇게 pretrained된 representation들로부터 down stream task를 건설 시 성능 효과를 기대 할 수 있다. 
 Bert는 Context sensitive한 모델로 그 장점을 지니며 또한 Transformer를 기본 구조로 차용하므로 문장의 각 단어에 대한 self-attention 활용의 이점까지 취할 수 있었다.
 
 2. Clinical 영역으로의 Bert의 활용은 가능하다. 하지만 Corpus의 규모가 적으므로 well trained model을 얻기에는 다소 어려울 수 있으며, 특히 한국어+영어 혼용과 같은 문장구성이 이루어진 경우
