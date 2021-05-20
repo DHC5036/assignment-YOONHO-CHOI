@@ -1,7 +1,7 @@
 Recommender system을 healthcare application에 적용하는 부분은 다음과 같이 구상 해 볼 수 있다. 
 
 Recommender system의 본질은 "이용자의 성향에 적합한 컨텐츠를 우선순위에 따라 정렬"하는 system이다.
-이를 healthcare application으로 치환하면, 이용자 = 환자, 성향 = 건강상태, 적합한 컨텐츠 = 질병/분과로 표현 할 수 있을 것이다. 
+이를 healthcare application에 적용하면, 이용자 = 환자, 성향 = 건강상태, 적합한 컨텐츠 = 질병/분과로 치환 할 수 있을 것이다. 
 
 즉 "환자의 건강상태의 입력을 바탕으로 적절한 질병/분과를 우선순위에 따라 정렬하는 system"으로 볼 수 있을 것이며
 수요와 목적성을 고려하여 정리해보자면 다음과 같이 구상 할 수 있을 것이다.
