@@ -1,0 +1,17 @@
+Medical domain에서 인공지능을 개발하는것에는 Interpretability, Generalization problem 등 여러 어려움이 존재한다.
+개인적인 견해로는 이러한 어려움들의 상당수는 데이터로부터 비롯된다 본다.
+현재의 AI 붐은 'Data', 'Theory', 'Hardware'의 증대/발전이 근간이 되었다 할 수 있는데, 
+Medical domain에서는 그 한 축인 'Data'가 충분치 않기에 여타 domain에서 보다 성능/효용성이 저하된다 생각한다.
+
+개인적인 견해로 강하게 표현하자면 "Medical domaion에는 'Data war'가 벌어지고 있다."고 할 수 있겠다.
+나는, 현재 Medical domain에서의 'Data war'를 1. 규제로 인한 전쟁과, 2. 규모에 의한 전쟁의 두가지 형태로 정리한다. 
+
+1. 규제로 인한 전쟁은 마땅히 존중받아야 할 개인정보보안 이슈를 말하는 것이고
+2. 규모에 의한 전쟁은 Data의 양 그 자체에 의한 이슈를 일컫는다.
+
+여기서 1.은 주제와 거리가 있으니 생략하고 2.에 대하여 후술하겠다.
+
+따져보자면, 우리가 확보 할 수 있는 Data의 양은 Data 확보에 소요되는 비용에 반비례한다고 볼 수 있다.
+일반 image domain에서 ImageNet, COCO dataset 등의 데이터들은 
+
+GAN을 환자 데이터의 생성에 활용할 수 있다고 본다.
